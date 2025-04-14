@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "PDF Auto Rename",
+  "version": "1.0.0",
+  "description": "Automatically renames PDF files using OpenAI",
+  "permissions": [
+    "downloads",
+    "storage",
+    "downloads.open",
+    "downloads.shelf",
+    "downloads.ui",
+    "downloads.write",
+    "permissions"
+  ],
+  "optional_permissions": [
+    "notifications"
+  ],
+  "host_permissions": [
+    "https://api.openai.com/*",
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  }
+} 
